@@ -1,4 +1,4 @@
-public class Silnia {
+public class Excercise3 {
     static int result(int a)
     {
         if (a==0)
