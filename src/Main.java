@@ -14,6 +14,7 @@ public class Main
             System.out.println("[3] - NWW");
             System.out.println("[4] - NWD");
             System.out.println("[5] - Raise n to the m power");
+            System.out.println("[6] - Exit");
             System.out.print("Your choice: ");
 
             short response = in.nextShort();
