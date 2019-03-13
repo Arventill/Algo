@@ -25,7 +25,7 @@ public class Main
                 System.out.println(Color.BLUE + "NWW" + Color.DEFAULT);
                 break;
             case 4:
-                System.out.println(Color.BLUE + "NWD" + Color.DEFAULT);
+                System.out.println( Color.CYAN + NWD.result(7, 6)+ Color.DEFAULT);
                 break;
             case 5:
                 System.out.println(Color.BLUE + "Ex5" + Color.DEFAULT);
