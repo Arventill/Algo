@@ -14,10 +14,12 @@ public class Main
             System.out.println("[3] - NWW");
             System.out.println("[4] - NWD");
             System.out.println("[5] - Raise n to the m power");
-            System.out.println("[6] - Exit");
+            System.out.println("[6] - Adding up digits of the number");
+            System.out.println("[7] - Exit");
             System.out.print("Your choice: ");
 
             short response = in.nextShort();
+
             switch (response) {
                 case 1:{
                     System.out.println(Color.BLUE + "Hello world" + Color.DEFAULT);
@@ -40,10 +42,19 @@ public class Main
                     break;
                 }
                 case 5: {
-                    System.out.println(Color.BLUE + "Ex5" + Color.DEFAULT);
+                    int n = in.nextInt();
+                    int m = in.nextInt();
+                    System.out.println(Color.BLUE + Exercise4.raiseToPower(n, m) + Color.DEFAULT);
                     break;
                 }
-                case 6:
+
+                case 6: {
+                    int number = in.nextInt();
+                    System.out.println(Color.BLUE + Exercise5.addingUp(number) + Color.DEFAULT);
+                    break;
+                }
+
+                case 7:
                 {
                     System.out.println(Color.BLUE + "Bye :P" + Color.DEFAULT);
                     isRunning = false;

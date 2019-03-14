@@ -1,4 +1,4 @@
-class Power {
+class Exercise4 {
 
 
   static int raiseToPower(int number, int exponent){
