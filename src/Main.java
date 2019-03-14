@@ -54,8 +54,7 @@ public class Main
                     break;
                 }
 
-                case 7:
-                {
+                case 7: {
                     System.out.println(Color.BLUE + "Bye :P" + Color.DEFAULT);
                     isRunning = false;
                     break;
