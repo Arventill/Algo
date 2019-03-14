@@ -1,4 +1,4 @@
-public class Excercise3 {
+public class Exercise3 {
     static int result(int a)
     {
         if (a==0)

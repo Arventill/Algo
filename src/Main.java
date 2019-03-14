@@ -26,7 +26,7 @@ public class Main
                     break;
                 }
                 case 2: {
-                    System.out.println(Color.GREEN + Excercise3.result(10) + Color.DEFAULT);
+                    System.out.println(Color.GREEN + Exercise3.result(10) + Color.DEFAULT);
                     break;
                 }
                 case 3: {
@@ -38,7 +38,7 @@ public class Main
                     int a = in.nextInt();
                     System.out.print("b: ");
                     int b = in.nextInt();
-                    System.out.println(Color.CYAN + "NWD is: " + Excercise2a.result(a, b) + Color.DEFAULT);
+                    System.out.println(Color.CYAN + "NWD is: " + Exercise2a.result(a, b) + Color.DEFAULT);
                     break;
                 }
                 case 5: {

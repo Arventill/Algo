@@ -1,4 +1,4 @@
-public class Excercise2a {
+public class Exercise2a {
     static int result(int liczba1, int liczba2)
     {
 
