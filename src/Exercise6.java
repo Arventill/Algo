@@ -1,13 +1,22 @@
 import java.util.Scanner;
 
 public class Exercise6 {
-    public static void menu()
+    public void menu()
     {
+
+        Scanner in = new Scanner(System.in);
+
+        int[] tab = new int[10];
+
+        for (int i=0; i<10; i++)
+        {
+            tab[i] = in.nextInt();
+        }
+
         while (true)
         {
-            Scanner in = new Scanner(System.in);
+
             short response = in.nextShort();
-            
             switch (response)
             {
                 case 1: {
@@ -26,6 +35,14 @@ public class Exercise6 {
                     break;
                 }
                 case 6: {
+                    break;
+                }case 7: {
+                    break;
+                }
+                case 8: {
+                    break;
+                }
+                case 9: {
                     break;
                 }
 
