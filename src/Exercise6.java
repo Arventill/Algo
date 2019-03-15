@@ -4,7 +4,7 @@ public class Exercise6 {
 
     Scanner in = new Scanner(System.in);
 
-    public void menu()
+    public void menu(int tab[])
     {
         for (int i=0; i<10; i++)
         {
@@ -17,7 +17,7 @@ public class Exercise6 {
             switch (response)
             {
                 case 1: {
-                    maxValue();
+                    maxValue(tab);
                     break;
                 }
                 case 2: {
@@ -52,7 +52,7 @@ public class Exercise6 {
 
     }
 
-    private void maxValue()
+    private void maxValue(int tab[])
     {
         int imax=0;
         for (int i=0; i<10; i++)
