@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class Exercise6 {
 
     Scanner in = new Scanner(System.in);
-    int[] tab = new int[10];
 
     public void menu()
     {

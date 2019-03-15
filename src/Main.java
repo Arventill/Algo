@@ -61,6 +61,9 @@ public class Main
                 }
 
                 case 7: {
+                    int[] tab = new int[10];
+
+                    System.out.println("joł joł podaj tablice: ");
                     ex6.menu();
                     break;
                 }
