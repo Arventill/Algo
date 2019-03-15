@@ -22,47 +22,50 @@ class Exercise6 {
             System.out.println("[10] - Back to main menu");
 
             System.out.print("Your choice: ");
+
             short response = in.nextShort();
+
             switch (response)
             {
-                case 1: {
+
+                case 1:
                     maxValue(tab);
                     break;
-                }
-                case 2: {
+
+                case 2:
                     break;
-                }
-                case 3: {
+
+                case 3:
                     break;
-                }
-                case 4: {
+
+                case 4:
                     break;
-                }
-                case 5: {
+
+                case 5:
                     break;
-                }
-                case 6: {
+
+                case 6:
                     break;
-                }
-                case 7: {
+
+                case 7:
                     break;
-                }
-                case 8: {
+
+                case 8:
                     break;
-                }
-                case 9: {
+
+                case 9:
 
                   System.out.println("Enter the item number: ");
                   int n = in.nextInt();
                   System.out.println("Value of " + n +"element is: " + getValue(tab, n));
                   break;
-                }
-              case 10: {
 
-              }
-                default: {
+              case 10:
+                  break;
+
+                default:
                     break;
-                }
+
             }
         }
 
@@ -70,14 +73,14 @@ class Exercise6 {
 
     private void maxValue(int[] tab)
     {
-        int imax=0;
+        int max=0;
         for (int i=0; i<10; i++)
         {
-            if (tab[i] > imax)
-                imax = tab[i];
+            if (tab[i] > max)
+                max = tab[i];
         }
 
-        System.out.println("Największa wartość w tablicy: " + imax);
+        System.out.println("The biggest value in array: " + max);
     }
 
     private int getValue(int[] tab, int n){

@@ -25,45 +25,44 @@ public class Main
             short response = in.nextShort();
 
             switch (response) {
-                case 1:{
+
+                case 1:
                     System.out.println(Color.BLUE + "Hello world" + Color.DEFAULT);
                     break;
-                }
-                case 2: {
+
+                case 2:
                     System.out.print("a: ");
                     int a = in.nextInt();
                     System.out.println(Color.GREEN + Exercise3.result(a) + Color.DEFAULT);
                     break;
-                }
-                case 3: {
+
+                case 3:
                     System.out.println(Color.BLUE + "NWW" + Color.DEFAULT);
                     break;
-                }
-                case 4: {
+
+                case 4:
                     System.out.print("a: ");
-                    int a = in.nextInt();
+                    int num1 = in.nextInt();
                     System.out.print("b: ");
-                    int b = in.nextInt();
-                    System.out.println(Color.CYAN + "NWD is: " + Exercise2a.result(a, b) + Color.DEFAULT);
+                    int num2 = in.nextInt();
+                    System.out.println(Color.CYAN + "NWD is: " + Exercise2a.result(num1, num2) + Color.DEFAULT);
                     break;
-                }
-                case 5: {
+
+                case 5:
                     System.out.println("Enter the basis of power: ");
                     int n = in.nextInt();
                     System.out.println("Enter exponent: ");
                     int e = in.nextInt();
                     System.out.println(Color.BLUE + Exercise4.raiseToPower(n, e) + Color.DEFAULT);
                     break;
-                }
 
-                case 6: {
+                case 6:
                     System.out.println("Enter a number: ");
                     int number = in.nextInt();
                     System.out.println(Color.BLUE + Exercise5.addingUp(number) + Color.DEFAULT);
                     break;
-                }
 
-                case 7: {
+                case 7:
                     int[] tab = new int[10];
 
                     System.out.println("Enter 10 elements to your array: ");
@@ -73,18 +72,15 @@ public class Main
                     }
                     ex6.menu(tab);
                     break;
-                }
 
-                case 8: {
+                case 8:
                     System.out.println();
                     break;
-                }
 
-                case 9: {
+                case 9:
                     System.out.println(Color.BLUE + "Bye :P" + Color.DEFAULT);
                     isRunning = false;
                     break;
-                }
 
                 default:
                     System.out.println(Color.RED + "Unknown option, please try again" + Color.DEFAULT);

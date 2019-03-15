@@ -1,17 +1,17 @@
-public class Exercise2a {
-    static int result(int liczba1, int liczba2)
+class Exercise2a {
+    static int result(int number1, int number2)
     {
 
-        if(liczba1%liczba2==0)
-            return liczba2;
+        if(number1%number2==0)
+            return number2;
         else
         {
             do
             {
-                liczba2--;
-            } while (liczba1 % liczba2 != 0);
+                number2--;
+            } while (number1 % number2 != 0);
 
-            return liczba2;
+            return number2;
         }
     }
 }
