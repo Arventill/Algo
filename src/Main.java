@@ -37,7 +37,11 @@ public class Main
                     break;
 
                 case 3:
-                    System.out.println(Color.BLUE + "NWW" + Color.DEFAULT);
+                    System.out.print("a: ");
+                    int l1 = in.nextInt();
+                    System.out.print("b: ");
+                    int l2 = in.nextInt();
+                    System.out.println(Color.CYAN + "NWW is: " + Exercise2.nww(l1, l2) + Color.DEFAULT);
                     break;
 
                 case 4:
