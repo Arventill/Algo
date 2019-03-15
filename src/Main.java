@@ -5,6 +5,8 @@ public class Main
     private static boolean isRunning = true;
 
     public static void main(String[] args) {
+        Exercise6 ex6 = new Exercise6();
+
         do {
             Scanner in = new Scanner(System.in);
             System.out.println();
@@ -15,7 +17,9 @@ public class Main
             System.out.println("[4] - NWD");
             System.out.println("[5] - Raise n to the m power");
             System.out.println("[6] - Adding up digits of the number");
-            System.out.println("[7] - Exit");
+            System.out.println("[7] - Adding up digits of the number");
+            System.out.println("[8] - Adding up digits of the number");
+            System.out.println("[9] - Exit");
             System.out.print("Your choice: ");
 
             short response = in.nextShort();
@@ -57,7 +61,7 @@ public class Main
                 }
 
                 case 7: {
-                    Exercise6.menu();
+                    ex6.menu();
                     break;
                 }
 

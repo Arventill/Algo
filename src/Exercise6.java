@@ -1,13 +1,12 @@
 import java.util.Scanner;
 
 public class Exercise6 {
+
+    Scanner in = new Scanner(System.in);
+    int[] tab = new int[10];
+
     public void menu()
     {
-
-        Scanner in = new Scanner(System.in);
-
-        int[] tab = new int[10];
-
         for (int i=0; i<10; i++)
         {
             tab[i] = in.nextInt();
@@ -15,11 +14,11 @@ public class Exercise6 {
 
         while (true)
         {
-
             short response = in.nextShort();
             switch (response)
             {
                 case 1: {
+                    maxValue();
                     break;
                 }
                 case 2: {
@@ -52,5 +51,17 @@ public class Exercise6 {
             }
         }
 
+    }
+
+    private void maxValue()
+    {
+        int imax=0;
+        for (int i=0; i<10; i++)
+        {
+            if (tab[i] > imax)
+                imax = tab[i];
+        }
+
+        System.out.println("Największa wartość w tablicy: " + imax);
     }
 }
