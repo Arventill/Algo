@@ -17,7 +17,7 @@ public class Main
             System.out.println("[4] - NWD");
             System.out.println("[5] - Raise n to the m power");
             System.out.println("[6] - Adding up digits of the number");
-            System.out.println("[7] - Adding up digits of the number");
+            System.out.println("[7] - Operations on a given array");
             System.out.println("[8] - Adding up digits of the number");
             System.out.println("[9] - Exit");
             System.out.print("Your choice: ");
@@ -48,13 +48,16 @@ public class Main
                     break;
                 }
                 case 5: {
+                    System.out.println("Enter the basis of power: ");
                     int n = in.nextInt();
-                    int m = in.nextInt();
-                    System.out.println(Color.BLUE + Exercise4.raiseToPower(n, m) + Color.DEFAULT);
+                    System.out.println("Enter exponent: ");
+                    int e = in.nextInt();
+                    System.out.println(Color.BLUE + Exercise4.raiseToPower(n, e) + Color.DEFAULT);
                     break;
                 }
 
                 case 6: {
+                    System.out.println("Enter a number: ");
                     int number = in.nextInt();
                     System.out.println(Color.BLUE + Exercise5.addingUp(number) + Color.DEFAULT);
                     break;
@@ -63,7 +66,7 @@ public class Main
                 case 7: {
                     int[] tab = new int[10];
 
-                    System.out.println("Print 10 elements to your tab: ");
+                    System.out.println("Enter 10 elements to your array: ");
                     for (int i=0; i<10; i++)
                     {
                         tab[i] = in.nextInt();

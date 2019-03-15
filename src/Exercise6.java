@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
-public class Exercise6 {
+class Exercise6 {
 
-    Scanner in = new Scanner(System.in);
+    private Scanner in = new Scanner(System.in);
 
-    public void menu(int tab[])
+    void menu(int[] tab)
     {
         while (true)
         {
@@ -18,7 +18,7 @@ public class Exercise6 {
             System.out.println("[6] - ?");
             System.out.println("[7] - ?");
             System.out.println("[8] - ?");
-            System.out.println("[9] - ?");
+            System.out.println("[9] - Get value of nth element");
             System.out.println("[10] - Back to main menu");
 
             System.out.print("Your choice: ");
@@ -43,19 +43,23 @@ public class Exercise6 {
                 }
                 case 6: {
                     break;
-                }case 7: {
+                }
+                case 7: {
                     break;
                 }
                 case 8: {
                     break;
                 }
                 case 9: {
-                    break;
-                }
-                case 10: {
-                    return;
-                }
 
+                  System.out.println("Enter the item number: ");
+                  int n = in.nextInt();
+                  System.out.println("Value of " + n +"element is: " + getValue(tab, n));
+                  break;
+                }
+              case 10: {
+
+              }
                 default: {
                     break;
                 }
@@ -64,7 +68,7 @@ public class Exercise6 {
 
     }
 
-    private void maxValue(int tab[])
+    private void maxValue(int[] tab)
     {
         int imax=0;
         for (int i=0; i<10; i++)
@@ -74,5 +78,10 @@ public class Exercise6 {
         }
 
         System.out.println("Największa wartość w tablicy: " + imax);
+    }
+
+    private int getValue(int[] tab, int n){
+
+      return tab[n];
     }
 }
