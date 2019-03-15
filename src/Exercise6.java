@@ -54,7 +54,6 @@ class Exercise6 {
                     break;
 
                 case 9:
-
                   System.out.println("Enter the item number: ");
                   int n = in.nextInt();
                   System.out.println("Value of " + n +"element is: " + getValue(tab, n));

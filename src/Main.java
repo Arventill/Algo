@@ -45,7 +45,7 @@ public class Main
                     int num1 = in.nextInt();
                     System.out.print("b: ");
                     int num2 = in.nextInt();
-                    System.out.println(Color.CYAN + "NWD is: " + Exercise2a.result(num1, num2) + Color.DEFAULT);
+                    System.out.println(Color.CYAN + "NWD is: " + Exercise2.nwd(num1, num2) + Color.DEFAULT);
                     break;
 
                 case 5:

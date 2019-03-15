@@ -1,5 +1,6 @@
-class Exercise2a {
-    static int result(int number1, int number2)
+class Exercise2 {
+
+    static int nwd(int number1, int number2)
     {
 
         if(number1%number2==0)
@@ -13,5 +14,9 @@ class Exercise2a {
 
             return number2;
         }
+    }
+
+    static int nww(int number1, int number2){
+        return 0;
     }
 }
