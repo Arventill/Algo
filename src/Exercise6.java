@@ -6,13 +6,22 @@ public class Exercise6 {
 
     public void menu(int tab[])
     {
-        for (int i=0; i<10; i++)
-        {
-            tab[i] = in.nextInt();
-        }
-
         while (true)
         {
+            System.out.println();
+            System.out.println("Choose an option:");
+            System.out.println("[1] - Max value");
+            System.out.println("[2] - ?");
+            System.out.println("[3] - ?");
+            System.out.println("[4] - ?");
+            System.out.println("[5] - ?");
+            System.out.println("[6] - ?");
+            System.out.println("[7] - ?");
+            System.out.println("[8] - ?");
+            System.out.println("[9] - ?");
+            System.out.println("[10] - Back to main menu");
+
+            System.out.print("Your choice: ");
             short response = in.nextShort();
             switch (response)
             {
@@ -42,6 +51,9 @@ public class Exercise6 {
                 }
                 case 9: {
                     break;
+                }
+                case 10: {
+                    return;
                 }
 
                 default: {

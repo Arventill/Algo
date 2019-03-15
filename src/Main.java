@@ -63,7 +63,11 @@ public class Main
                 case 7: {
                     int[] tab = new int[10];
 
-                    System.out.println("joł joł podaj tablice: ");
+                    System.out.println("Print 10 elements to your tab: ");
+                    for (int i=0; i<10; i++)
+                    {
+                        tab[i] = in.nextInt();
+                    }
                     ex6.menu(tab);
                     break;
                 }
