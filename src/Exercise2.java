@@ -1,44 +1,44 @@
 class Exercise2 {
 
-    static int nwd(int liczba1, int liczba2)
+    static int nwd(int n1, int n2)
     {
-        if(liczba1 != 0 && liczba2 != 0) {
-            while (liczba1 != liczba2) {
-                if (liczba1 > liczba2) {
-                    liczba1 = liczba1 - liczba2;
+        if(n1 != 0 && n2 != 0) {
+            while (n1 != n2) {
+                if (n1 > n2) {
+                    n1 -= n2;
                 }
-                else liczba2=liczba2-liczba1;
+                else n2 -= n1;
             }
 
         }
-        return liczba1;
+        return n1;
     }
 
 
-    static int nww(int l1, int l2)
+    static int nww(int n1, int n2)
     {
         int temp, ab;
-        if(l1 != 0 || l2 != 0)
+        if(n1 != 0 || n2 != 0)
         {
-            ab = l1 * l2;
-            while(l2 == 0)
+            ab = n1 * n2;
+            while(n2 == 0)
             {
-                temp=l2;
-                l2=l1%l2;
-                l1=temp;
+                temp=n2;
+                n2=n1%n2;
+                n1=temp;
             }
-            if(l1 != 0 && l2 != 0) {
-                while (l1 != l2) {
-                    if (l1 > l2) {
-                        l1 = l1 - l2;
+            if(n1 != 0 && n2 != 0) {
+                while (n1 != n2) {
+                    if (n1 > n2) {
+                        n1 = n1 - n2;
                     }
-                    else l2=l2-l1;
+                    else n2=n2-n1;
                 }
 
             }
-            ab=ab/l1;
-            l1=ab;
+            ab=ab/n1;
+            n1=ab;
         }
-        return l1;
+        return n1;
     }
 }
