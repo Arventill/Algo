@@ -26,7 +26,9 @@ public class Main
                     break;
                 }
                 case 2: {
-                    System.out.println(Color.GREEN + Exercise3.result(10) + Color.DEFAULT);
+                    System.out.print("a: ");
+                    int a = in.nextInt();
+                    System.out.println(Color.GREEN + Exercise3.result(a) + Color.DEFAULT);
                     break;
                 }
                 case 3: {
@@ -55,6 +57,16 @@ public class Main
                 }
 
                 case 7: {
+                    Exercise6.menu();
+                    break;
+                }
+
+                case 8: {
+                    System.out.println();
+                    break;
+                }
+
+                case 9: {
                     System.out.println(Color.BLUE + "Bye :P" + Color.DEFAULT);
                     isRunning = false;
                     break;
