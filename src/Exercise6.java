@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 class Exercise6 {
 
-    private Scanner in = new Scanner(System.in);
+  private Scanner in = new Scanner(System.in);
 
     void menu(int[] tab)
     {
@@ -17,7 +17,7 @@ class Exercise6 {
             System.out.println("[5] - Sum of array");
             System.out.println("[6] - ?");
             System.out.println("[7] - ?");
-            System.out.println("[8] - ?");
+            System.out.println("[8] - Get elements divided by 3");
             System.out.println("[9] - Get value of nth element");
             System.out.println("[10] - Back to main menu");
 
@@ -55,14 +55,15 @@ class Exercise6 {
                 case 7:
                     break;
 
-                case 8:
-                    break;
+        case 8:
+          System.out.println("Elements divided by 3: " + getElementsBy3(tab));
+          break;
 
-                case 9:
-                  System.out.println("Enter the item number: ");
-                  int n = in.nextInt();
-                  System.out.println("Value of " + n +"element is: " + getValue(tab, n));
-                  break;
+        case 9:
+          System.out.println("Enter the item number: ");
+          int n = in.nextInt();
+          System.out.println("Value of " + n + "element is: " + getValue(tab, n));
+          break;
 
               case 10:
                   return;
@@ -140,6 +141,42 @@ class Exercise6 {
 
     private int getValue(int[] tab, int n){
 
-      return tab[n];
+    return tab[n];
+  }
+
+  private int getElementsBy3(int[] tab) {
+
+    int counter = 0;
+
+    for (int i1 : tab) {
+
+      if (i1 % 3 == 0) {
+        counter++;
+      }
+
     }
+
+    return counter;
+
+  }
+
+  private double variance(int[] tab) {
+
+    int sum = 0;
+    double nominator = 0.0;
+
+    for (int i1 : tab) {
+
+      sum += i1;
+
+    }
+
+    for (int i1 : tab) {
+
+      nominator += Exercise4.raiseToPower(i1 - (sum / tab.length), 2);
+
+    }
+  return 0;
+
+  }
 }
