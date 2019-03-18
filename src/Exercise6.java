@@ -13,8 +13,8 @@ class Exercise6 {
             System.out.println("[1] - Max value");
             System.out.println("[2] - Min value");
             System.out.println("[3] - Dispersion of values");
-            System.out.println("[4] - ?");
-            System.out.println("[5] - ?");
+            System.out.println("[4] - Average value of array");
+            System.out.println("[5] - Sum of array");
             System.out.println("[6] - ?");
             System.out.println("[7] - ?");
             System.out.println("[8] - ?");
@@ -41,9 +41,12 @@ class Exercise6 {
                     break;
 
                 case 4:
+                    int result = average(tab);
+                    System.out.println(result);
                     break;
 
                 case 5:
+                    sum(tab);
                     break;
 
                 case 6:
@@ -122,6 +125,17 @@ class Exercise6 {
         }
 
         return iresult/10;
+    }
+
+    private void sum(int[] tab)
+    {
+        int iresult = 0;
+        for (int i = 0; i < 10; i++)
+        {
+            iresult += tab[i];
+        }
+
+        System.out.println(iresult);
     }
 
     private int getValue(int[] tab, int n){
