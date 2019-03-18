@@ -1,11 +1,11 @@
 class Exercise4 {
 
 
-  static int raiseToPower(int number, int exponent){
+  static double raiseToPower(double number, int exponent){
 
-    int temp = 1;
+    double temp = 1;
 
-    for (int i = 1; i <=exponent; i++){
+    for (double i = 1; i <=exponent; i++){
 
       temp *= number;
 

@@ -21,12 +21,11 @@ class Exercise6 {
             System.out.println("[9] - Get value of nth element");
             System.out.println("[10] - Back to main menu");
 
-            System.out.print("Your choice: ");
+      System.out.print("Your choice: ");
 
-            short response = in.nextShort();
+      short response = in.nextShort();
 
-            switch (response)
-            {
+      switch (response) {
 
                 case 1:
                     maxValue(tab);
@@ -49,11 +48,12 @@ class Exercise6 {
                     sum(tab);
                     break;
 
-                case 6:
-                    break;
+        case 6:
+          break;
 
-                case 7:
-                    break;
+        case 7:
+          System.out.println("Variance: " + variance(tab));
+          break;
 
         case 8:
           System.out.println("Elements divided by 3: " + getElementsBy3(tab));
@@ -65,68 +65,59 @@ class Exercise6 {
           System.out.println("Value of " + n + "element is: " + getValue(tab, n));
           break;
 
-              case 10:
-                  return;
+        case 10:
+          return;
 
-                default:
-                    break;
+        default:
+          break;
 
-            }
-        }
-
+      }
     }
 
-    private void maxValue(int[] tab)
-    {
-        int max = 0;
-        for (int i = 0; i < 10; i++)
-        {
-            if (tab[i] > max)
-                max = tab[i];
-        }
+  }
 
-        System.out.println("The biggest value in array: " + max);
+  private void maxValue(int[] tab) {
+    int max = 0;
+    for (int i1 : tab) {
+      if (i1 > max)
+        max = i1;
     }
 
-    private void minValue(int[] tab)
-    {
-        int min = 999999999;
-        for (int i = 0; i < 10; i++)
-        {
-            if (tab[i] < min)
-                min = tab[i];
-        }
-        System.out.println("The lowest value in array: " + min);
+    System.out.println("The biggest value in array: " + max);
+  }
+
+  private void minValue(int[] tab) {
+    int min = 999999999;
+    for (int i = 0; i < 10; i++) {
+      if (tab[i] < min)
+        min = tab[i];
+    }
+    System.out.println("The lowest value in array: " + min);
+  }
+
+  private void dispersion(int[] tab) {
+    int[] t = new int[9];
+
+    for (int i = 0; i < 9; i++) {
+      if (tab[i] > tab[i + 1])
+        t[i] = (tab[i] - tab[i + 1]);
+      else
+        t[i] = (tab[i + 1] - tab[i]);
     }
 
-    private void dispersion(int[] tab)
-    {
-        int[] t = new int[9];
+    for (int i = 0; i < 9; i++) {
+      System.out.println(t[i] + "\n");
+    }
+  }
 
-        for (int i = 0; i < 9; i++)
-        {
-            if (tab[i] > tab[i+1])
-                t[i] = (tab[i] - tab[i+1]);
-            else
-                t[i] = (tab[i+1] - tab[i]);
-        }
-
-        for (int i = 0; i < 9; i++)
-        {
-            System.out.println(t[i] + "\n");
-        }
+  private int average(int[] tab) {
+    int iresult = 0;
+    for (int i = 0; i < 10; i++) {
+      iresult += tab[i];
     }
 
-    private int average(int[] tab)
-    {
-        int iresult = 0;
-        for (int i = 0; i < 10; i++)
-        {
-            iresult += tab[i];
-        }
-
-        return iresult/10;
-    }
+    return iresult / 10;
+  }
 
     private void sum(int[] tab)
     {
@@ -162,8 +153,8 @@ class Exercise6 {
 
   private double variance(int[] tab) {
 
-    int sum = 0;
-    double nominator = 0.0;
+    double sum = 0;
+    double numerator  = 0.0;
 
     for (int i1 : tab) {
 
@@ -173,10 +164,10 @@ class Exercise6 {
 
     for (int i1 : tab) {
 
-      nominator += Exercise4.raiseToPower(i1 - (sum / tab.length), 2);
+      numerator  += Exercise4.raiseToPower(i1 - (sum / tab.length), 2);
 
     }
-  return 0;
+  return numerator /(tab.length-1);
 
   }
 }
