@@ -78,7 +78,13 @@ public class Main
                     break;
 
                 case 8:
-                    System.out.println();
+                    System.out.print("a: ");
+                    int no1 = in.nextInt();
+                    System.out.print("b: ");
+                    int no2 = in.nextInt();
+                    System.out.print("c: ");
+                    int no3 = in.nextInt();
+                    System.out.println(Color.CYAN + Exercise7.function(no1, no2, no3) + Color.DEFAULT);
                     break;
 
                 case 9:
