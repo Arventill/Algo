@@ -11,8 +11,8 @@ class Exercise6 {
             System.out.println();
             System.out.println("Choose an option:");
             System.out.println("[1] - Max value");
-            System.out.println("[2] - ?");
-            System.out.println("[3] - ?");
+            System.out.println("[2] - Min value");
+            System.out.println("[3] - Dispersion of values");
             System.out.println("[4] - ?");
             System.out.println("[5] - ?");
             System.out.println("[6] - ?");
@@ -33,9 +33,11 @@ class Exercise6 {
                     break;
 
                 case 2:
+                    minValue(tab);
                     break;
 
                 case 3:
+                    dispersion(tab);
                     break;
 
                 case 4:
@@ -60,7 +62,7 @@ class Exercise6 {
                   break;
 
               case 10:
-                  break;
+                  return;
 
                 default:
                     break;
@@ -72,14 +74,54 @@ class Exercise6 {
 
     private void maxValue(int[] tab)
     {
-        int max=0;
-        for (int i=0; i<10; i++)
+        int max = 0;
+        for (int i = 0; i < 10; i++)
         {
             if (tab[i] > max)
                 max = tab[i];
         }
 
         System.out.println("The biggest value in array: " + max);
+    }
+
+    private void minValue(int[] tab)
+    {
+        int min = 999999999;
+        for (int i = 0; i < 10; i++)
+        {
+            if (tab[i] < min)
+                min = tab[i];
+        }
+        System.out.println("The lowest value in array: " + min);
+    }
+
+    private void dispersion(int[] tab)
+    {
+        int[] t = new int[9];
+
+        for (int i = 0; i < 9; i++)
+        {
+            if (tab[i] > tab[i+1])
+                t[i] = (tab[i] - tab[i+1]);
+            else
+                t[i] = (tab[i+1] - tab[i]);
+        }
+
+        for (int i = 0; i < 9; i++)
+        {
+            System.out.println(t[i] + "\n");
+        }
+    }
+
+    private int average(int[] tab)
+    {
+        int iresult = 0;
+        for (int i = 0; i < 10; i++)
+        {
+            iresult += tab[i];
+        }
+
+        return iresult/10;
     }
 
     private int getValue(int[] tab, int n){
