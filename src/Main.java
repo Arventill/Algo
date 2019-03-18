@@ -38,10 +38,10 @@ public class Main
 
                 case 3:
                     System.out.print("a: ");
-                    int l1 = in.nextInt();
+                    int n1 = in.nextInt();
                     System.out.print("b: ");
-                    int l2 = in.nextInt();
-                    System.out.println(Color.CYAN + "NWW is: " + Exercise2.nww(l1, l2) + Color.DEFAULT);
+                    int n2 = in.nextInt();
+                    System.out.println(Color.CYAN + "NWW is: " + Exercise2.nww(n1, n2) + Color.DEFAULT);
                     break;
 
                 case 4:
