@@ -4,22 +4,20 @@ class Exercise6 {
 
   private Scanner in = new Scanner(System.in);
 
-    void menu(int[] tab)
-    {
-        while (true)
-        {
-            System.out.println();
-            System.out.println("Choose an option:");
-            System.out.println("[1] - Max value");
-            System.out.println("[2] - Min value");
-            System.out.println("[3] - Dispersion of values");
-            System.out.println("[4] - Average value of array");
-            System.out.println("[5] - Sum of array");
-            System.out.println("[6] - ?");
-            System.out.println("[7] - ?");
-            System.out.println("[8] - Get elements divided by 3");
-            System.out.println("[9] - Get value of nth element");
-            System.out.println("[10] - Back to main menu");
+  void menu(int[] tab) {
+    while (true) {
+      System.out.println();
+      System.out.println("Choose an option:");
+      System.out.println("[1] - Max value");
+      System.out.println("[2] - Min value");
+      System.out.println("[3] - Dispersion of values");
+      System.out.println("[4] - Average value of array");
+      System.out.println("[5] - Sum of array");
+      System.out.println("[6] - Standard deviation");
+      System.out.println("[7] - Variance");
+      System.out.println("[8] - Get elements divided by 3");
+      System.out.println("[9] - Get value of nth element");
+      System.out.println("[10] - Back to main menu");
 
       System.out.print("Your choice: ");
 
@@ -27,28 +25,29 @@ class Exercise6 {
 
       switch (response) {
 
-                case 1:
-                    maxValue(tab);
-                    break;
+        case 1:
+          maxValue(tab);
+          break;
 
-                case 2:
-                    minValue(tab);
-                    break;
+        case 2:
+          minValue(tab);
+          break;
 
-                case 3:
-                    dispersion(tab);
-                    break;
+        case 3:
+          dispersion(tab);
+          break;
 
-                case 4:
-                    int result = average(tab);
-                    System.out.println(result);
-                    break;
+        case 4:
+          int result = average(tab);
+          System.out.println(result);
+          break;
 
-                case 5:
-                    sum(tab);
-                    break;
+        case 5:
+          sum(tab);
+          break;
 
         case 6:
+          System.out.println("Standard deviation: " + standardDeviation(tab));
           break;
 
         case 7:
@@ -119,18 +118,16 @@ class Exercise6 {
     return iresult / 10;
   }
 
-    private void sum(int[] tab)
-    {
-        int iresult = 0;
-        for (int i = 0; i < 10; i++)
-        {
-            iresult += tab[i];
-        }
-
-        System.out.println(iresult);
+  private void sum(int[] tab) {
+    int iresult = 0;
+    for (int i = 0; i < 10; i++) {
+      iresult += tab[i];
     }
 
-    private int getValue(int[] tab, int n){
+    System.out.println(iresult);
+  }
+
+  private int getValue(int[] tab, int n) {
 
     return tab[n];
   }
@@ -151,10 +148,17 @@ class Exercise6 {
 
   }
 
+  private double standardDeviation(int[] tab){
+
+    return Math.sqrt(variance(tab));
+
+  }
+
+
   private double variance(int[] tab) {
 
     double sum = 0;
-    double numerator  = 0.0;
+    double numerator = 0.0;
 
     for (int i1 : tab) {
 
@@ -164,10 +168,10 @@ class Exercise6 {
 
     for (int i1 : tab) {
 
-      numerator  += Exercise4.raiseToPower(i1 - (sum / tab.length), 2);
+      numerator += Exercise4.raiseToPower(i1 - (sum / tab.length), 2);
 
     }
-  return numerator /(tab.length-1);
+    return numerator / (tab.length - 1);
 
   }
 }
