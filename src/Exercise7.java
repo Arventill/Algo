@@ -1,6 +1,6 @@
-public class Exercise7 {
+class Exercise7 {
 
-    static int function(double a, double b, double c)
+    static  void function(double a, double b, double c)
     {
         if (a != 0) {
             if (b == 0) {
@@ -22,7 +22,7 @@ public class Exercise7 {
                     } else if (delta == 0) {
                         System.out.println("x = " + -b / (2 * a));
                     } else {
-                        System.out.println("brak pierwiastków");
+                        System.out.println("No elements in the set of real numbers.");
                     }
                 }
             }
@@ -39,6 +39,5 @@ public class Exercise7 {
             else
                 System.out.print("x = " + -c / b);
         }
-        return 0;
     }
 }

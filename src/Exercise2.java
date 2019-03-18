@@ -9,7 +9,6 @@ class Exercise2 {
                 }
                 else n2 -= n1;
             }
-
         }
         return n1;
     }
@@ -34,7 +33,6 @@ class Exercise2 {
                     }
                     else n2=n2-n1;
                 }
-
             }
             ab=ab/n1;
             n1=ab;
