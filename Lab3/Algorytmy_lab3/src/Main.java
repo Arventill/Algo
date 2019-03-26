@@ -12,7 +12,7 @@ public class Main {
       System.out.println("[1] - Calculate the circumference(?) and Perimeter of the triangle ");
       System.out.println("[2] - ");
       System.out.println("[3] - Fibonacci Sequence");
-      System.out.println("[4] - ");
+      System.out.println("[4] - Simple Calculator");
       System.out.println("[5] - Guess the number");
       System.out.println("[6] - Determinants method");
       System.out.println("[7] - Check if input number is prime");
@@ -54,6 +54,11 @@ public class Main {
           break;
 
         case 4:
+          System.out.print("Enter a: ");
+          double no1 = in.nextDouble();
+          System.out.print("Enter b: ");
+          double no2 = in.nextDouble();
+          Exercise4.calculator(no1, no2);
           break;
 
         case 5:
