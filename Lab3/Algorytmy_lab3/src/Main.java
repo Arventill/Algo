@@ -24,27 +24,25 @@ public class Main {
       switch (response) {
 
         case 1:
-          double [] tab = new double[3];
+          double[] tab = new double[3];
           System.out.println("Enter 3  sides of a triangle: ");
           for (int i = 0; i < 3; i++) {
             tab[i] = in.nextDouble();
           }
-          Exercise_1.triangle(tab);
+          Exercise1.triangle(tab);
 
           break;
 
-                case 2:
-                    double [][] t = new double [3][3];
-                    for (int i = 0; i < 3; i++)
-                    {
-                        for (int j = 0; j < 3; j++)
-                        {
-                            t[i][j] = in.nextDouble();
-                        }
-                    }
+        case 2:
+          double[][] t = new double[3][3];
+          for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+              t[i][j] = in.nextDouble();
+            }
+          }
 
-                    Exercise2.result(t);
-                    break;
+          Exercise2.result(t);
+          break;
 
         case 3:
           System.out.println("Enter the number of fibonacci sequence elements(1-92): ");

@@ -1,5 +1,5 @@
-public class Exercise_1 {
-    static void triangle(double tab[]) {
+class Exercise1 {
+    static void triangle(double[] tab) {
 
         double p;
         double temp;
