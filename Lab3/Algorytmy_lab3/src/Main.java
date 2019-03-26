@@ -9,7 +9,7 @@ public class Main {
       Scanner in = new Scanner(System.in);
       System.out.println();
       System.out.println("Choose an option:");
-      System.out.println("[1] - ");
+      System.out.println("[1] - Calculate the circumference(?) and Perimeter of the triangle ");
       System.out.println("[2] - ");
       System.out.println("[3] - Fibonacci Sequence");
       System.out.println("[4] - ");
@@ -24,6 +24,13 @@ public class Main {
       switch (response) {
 
         case 1:
+          double [] tab = new double[3];
+          System.out.println("Enter 3  sides of a triangle: ");
+          for (int i = 0; i < 3; i++) {
+            tab[i] = in.nextDouble();
+          }
+          Exercise_1.triangle(tab);
+
           break;
 
         case 2:
