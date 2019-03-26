@@ -1,6 +1,6 @@
 class Exercise7 {
 
-  static void primalityTest(int number) {
+  static void runPrimalityTest(int number) {
 
     boolean test = true;
     double divisor = Math.sqrt(number);

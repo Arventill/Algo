@@ -40,7 +40,7 @@ public class Main {
           System.out.println("Enter the number of fibonacci sequence elements(1-92): ");
           int n = in.nextInt();
 
-          Exercise3.fibonacciSequence(n);
+          Exercise3.printFibonacciSequence(n);
           break;
 
         case 4:
@@ -72,7 +72,7 @@ public class Main {
           System.out.println("Enter the number: ");
           int number = in.nextInt();
 
-          Exercise7.primalityTest(number);
+          Exercise7.runPrimalityTest(number);
 
           break;
 
