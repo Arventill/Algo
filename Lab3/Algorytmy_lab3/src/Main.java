@@ -33,8 +33,18 @@ public class Main {
 
           break;
 
-        case 2:
-          break;
+                case 2:
+                    double [][] t = new double [3][3];
+                    for (int i = 0; i < 3; i++)
+                    {
+                        for (int j = 0; j < 3; j++)
+                        {
+                            t[i][j] = in.nextDouble();
+                        }
+                    }
+
+                    Exercise2.result(t);
+                    break;
 
         case 3:
           System.out.println("Enter the number of fibonacci sequence elements(1-92): ");
