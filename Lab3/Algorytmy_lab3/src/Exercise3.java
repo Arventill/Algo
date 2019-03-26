@@ -1,6 +1,6 @@
 class Exercise3 {
 
-  static void fibonacciSeqence(int n){
+  static void fibonacciSequence(int n){
 
     long[] tab = new long[n];
     tab[0] = 1;

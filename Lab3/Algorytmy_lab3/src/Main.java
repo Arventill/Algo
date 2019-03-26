@@ -15,7 +15,7 @@ public class Main {
       System.out.println("[4] - ");
       System.out.println("[5] - Guess the number");
       System.out.println("[6] - Determinants method");
-      System.out.println("[7] - ");
+      System.out.println("[7] - Check if input number is prime");
       System.out.println("[8] - Exit");
       System.out.print("Your choice: ");
 
@@ -30,10 +30,10 @@ public class Main {
           break;
 
         case 3:
-          int n;
           System.out.println("Enter the number of fibonacci sequence elements(1-92): ");
-          n = in.nextInt();
-          Exercise3.fibonacciSeqence(n);
+          int n = in.nextInt();
+
+          Exercise3.fibonacciSequence(n);
           break;
 
         case 4:
@@ -62,6 +62,11 @@ public class Main {
           break;
 
         case 7:
+          System.out.println("Enter the number: ");
+          int number = in.nextInt();
+
+          Exercise7.primalityTest(number);
+
           break;
 
         case 8:
