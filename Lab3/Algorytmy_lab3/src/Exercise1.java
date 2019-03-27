@@ -1,11 +1,10 @@
-public class Exercise_1 {
-    static int triangle(double tab[]) {
+class Exercise1 {
+    static void triangle(double[] tab) {
 
         double p;
         double temp;
         if (tab[0] <= 0 || tab[1] <= 0 || tab[2] <= 0) {
             System.out.println("that triangle does not exist");
-            return 0;
         } else {
             for (int i=0; i<2; i++)
             {
@@ -25,6 +24,5 @@ public class Exercise_1 {
             else
                 System.out.println("that triangle does not exist");
         }
-        return 0;
     }
 }
