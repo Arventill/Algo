@@ -6,14 +6,14 @@ class Exercise6 {
     double wx = A * d - B * b;
     double wy = a * B - c * A;
 
-    if (w == 0 && wx == 0 && wy == 0) {
-      System.out.println("The system has infinitely many solutions.");
-    }
-    if (w == 0 && wx != 0 && wy != 0) {
-      System.out.println("The system has no solution.");
-    }
-    if (w != 0 && wx != 0 && wy != 0) {
+    if (w != 0) {
       System.out.println("Solutions: " + "\n" + "x = " + wx / w + "\n" + "y = " + wy / w);
+    } else {
+      if (wx == 0 && wy == 0) {
+        System.out.println("The system has infinitely many solutions.");
+      } else {
+        System.out.println("The system has no solution.");
+      }
     }
 
   }
