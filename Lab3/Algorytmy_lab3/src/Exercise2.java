@@ -25,7 +25,7 @@ public class Exercise2 {
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
                 transTab[i][j] = tab[j][i];
-                hTab[i][j] = tab[i][j];
+                hTab[i][j] = tab[i][j]; //dla wyznacznika
             }
         }
 
@@ -41,9 +41,7 @@ public class Exercise2 {
             }
         }
 
-
         double res = 0;
-
         double s = 1;
 
         for (int j = 0, k = 0; k < 3; k++)
