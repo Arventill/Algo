@@ -4,7 +4,7 @@ class Exercise1 {
         double p;
         double temp;
         if (tab[0] <= 0 || tab[1] <= 0 || tab[2] <= 0) {
-            System.out.println("that triangle does not exist");
+            System.out.println("That triangle does not exist");
         } else {
             for (int i=0; i<2; i++)
             {
@@ -24,7 +24,7 @@ class Exercise1 {
                 System.out.println(Math.sqrt(p*(p-tab[0])*(p-tab[1])*(p-tab[2])));
             }
             else
-                System.out.println("that triangle does not exist");
+                System.out.println("That triangle does not exist");
         }
     }
 }
