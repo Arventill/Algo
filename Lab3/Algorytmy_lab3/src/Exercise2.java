@@ -16,9 +16,10 @@ public class Exercise2 {
             }
         }
 
+        System.out.println(Color.PURPLE + "[Your matrix] * [123; 456; 789] matrix =" + Color.DEFAULT);
         for (int i = 0; i < 3; i++) {
             System.out.println(resTab[i][0] + ", " + resTab[i][1] + ", " + resTab[i][2] + "\n");
-        }
+        }System.out.println();
 
         //transpozycja macierzy
         for (int i = 0; i < 3; i++) {
@@ -28,9 +29,10 @@ public class Exercise2 {
             }
         }
 
+        System.out.println(Color.PURPLE + "Transpozition of your matrix:" + Color.DEFAULT);
         for (int i = 0; i < 3; i++) {
             System.out.println(transTab[i][0] + ", " + transTab[i][1] + ", " + transTab[i][2] + "\n");
-        }
+        }System.out.println("");
 
         //obliczanie wyznacznika
         for (int i = 0; i < 3; i++) {
@@ -62,7 +64,7 @@ public class Exercise2 {
             j=k+1;
         }
 
-
+        System.out.println(Color.PURPLE + "determinant of your matrix:" + Color.DEFAULT);
         System.out.println(res);
 
     }

@@ -10,7 +10,7 @@ public class Main {
       System.out.println();
       System.out.println("Choose an option:");
       System.out.println("[1] - Calculate the circumference(?) and Perimeter of the triangle ");
-      System.out.println("[2] - ");
+      System.out.println("[2] - Matrix operations");
       System.out.println("[3] - Fibonacci Sequence");
       System.out.println("[4] - Simple Calculator");
       System.out.println("[5] - Guess the number");
@@ -33,7 +33,8 @@ public class Main {
 
           break;
 
-        case 2:
+          case 2:
+          System.out.println("Enter 3x3 Matrix");
           double[][] t = new double[3][3];
           for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
