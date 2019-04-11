@@ -35,7 +35,7 @@ public class Main {
                     break;
 
                 case 4:
-                    System.out.print("Enter how many nymbers you want to add: ");
+                    System.out.print("Enter how many numbers you want to add: ");
                     int no = in.nextInt();
                     Exercise4.weighted_average(no);
                     break;
