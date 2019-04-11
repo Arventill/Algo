@@ -10,18 +10,18 @@ class Exercise4 {
     for (int i = 1; i <= n; i++) {
       System.out.print("enter the number: ");
       no = input.nextInt();
-      System.out.print("and her weight: ");
+      System.out.print("and her weight - it cant't be nagative number: ");
       w = input.nextInt();
+      while(w <0){
+        System.out.print("Weight can't be negative number. Try again: ");
+        w = input.nextInt();
+      }
       s1 += no * w;
       s2 += w;
     }
 
-    if (s2 == 0) {
-      System.out.println("Dividing by 0 - try again");
-    } else {
 
       System.out.println("Weighted average of given numbers: " + (double) s1 / s2);
-    }
   }
 
 }
