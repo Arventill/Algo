@@ -25,6 +25,7 @@ public class Main {
             switch (response) {
 
                 case 1:
+                    Exercise1.result();
                     break;
 
                 case 2:
@@ -47,6 +48,7 @@ public class Main {
                     break;
 
                 case 6:
+                    Exercise6.result();
                     break;
 
                 case 7:
