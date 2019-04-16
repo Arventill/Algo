@@ -33,6 +33,7 @@ public class Main {
                     break;
 
                 case 3:
+                    Exercise3.hexDec();
                     break;
 
                 case 4:
