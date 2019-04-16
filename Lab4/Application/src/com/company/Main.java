@@ -13,7 +13,7 @@ public class Main {
             System.out.println("Choose an option:");
             System.out.println("[1] - Perfect number");
             System.out.println("[2] - Change of numbers from binary and decimal systems: ");
-            System.out.println("[3] - ");
+            System.out.println("[3] - Change of numbers from heximal and decimal systems:");
             System.out.println("[4] - Calculate weighted average. ");
             System.out.println("[5] - Check if the given string is a palindrome. ");
             System.out.println("[6] - Caesar cipher");
