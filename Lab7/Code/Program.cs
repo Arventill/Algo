@@ -75,10 +75,9 @@ namespace Algo
             int[] optim_400 = parse(lines_optim_400);
             int[] optim_500 = parse(lines_optim_500);
             // ----------------------------------------------------------------------------------------------------------------------------------------------- \\
-            
+
             stopwatch.Start(); bubble_sort(ref norm_10, 10); stopwatch.Stop();
             string test1 = stopwatch.Elapsed.ToString(); stopwatch.Reset();
-            
             stopwatch.Start(); bubble_sort(ref norm_20, 20); stopwatch.Stop();
             string test2 = stopwatch.Elapsed.ToString(); stopwatch.Reset();
             stopwatch.Start(); bubble_sort(ref norm_30, 30); stopwatch.Stop();
@@ -265,7 +264,69 @@ namespace Algo
             string test89 = stopwatch.Elapsed.ToString(); stopwatch.Reset();
             stopwatch.Start(); selection_sort(ref optim_500, 500); stopwatch.Stop();
             string test90 = stopwatch.Elapsed.ToString(); stopwatch.Reset();
+            //***********************************************\\
+            stopwatch.Start(); quick_sort(ref norm_10, 0, 9); stopwatch.Stop();
+            string test91 = stopwatch.Elapsed.ToString(); stopwatch.Reset();
+            stopwatch.Start(); quick_sort(ref norm_20, 0, 19); stopwatch.Stop();
+            string test92 = stopwatch.Elapsed.ToString(); stopwatch.Reset();
+            stopwatch.Start(); quick_sort(ref norm_30, 0, 29); stopwatch.Stop();
+            string test93 = stopwatch.Elapsed.ToString(); stopwatch.Reset();
+            stopwatch.Start(); quick_sort(ref norm_50, 0, 49); stopwatch.Stop();
+            string test94 = stopwatch.Elapsed.ToString(); stopwatch.Reset();
+            stopwatch.Start(); quick_sort(ref norm_75, 0, 74); stopwatch.Stop();
+            string test95 = stopwatch.Elapsed.ToString(); stopwatch.Reset();
+            stopwatch.Start(); quick_sort(ref norm_100, 0, 99); stopwatch.Stop();
+            string test96 = stopwatch.Elapsed.ToString(); stopwatch.Reset();
+            stopwatch.Start(); quick_sort(ref norm_200, 0, 199); stopwatch.Stop();
+            string test97 = stopwatch.Elapsed.ToString(); stopwatch.Reset();
+            stopwatch.Start(); quick_sort(ref norm_300, 0, 299); stopwatch.Stop();
+            string test98 = stopwatch.Elapsed.ToString(); stopwatch.Reset();
+            stopwatch.Start(); quick_sort(ref norm_400, 0, 399); stopwatch.Stop();
+            string test99 = stopwatch.Elapsed.ToString(); stopwatch.Reset();
+            stopwatch.Start(); quick_sort(ref norm_500, 0, 499); stopwatch.Stop();
+            string test100 = stopwatch.Elapsed.ToString(); stopwatch.Reset();
 
+            stopwatch.Start(); quick_sort(ref pesim_10, 0, 9); stopwatch.Stop();
+            string test101 = stopwatch.Elapsed.ToString(); stopwatch.Reset();
+            stopwatch.Start(); quick_sort(ref pesim_20, 0, 19); stopwatch.Stop();
+            string test102 = stopwatch.Elapsed.ToString(); stopwatch.Reset();
+            stopwatch.Start(); quick_sort(ref pesim_30, 0, 29); stopwatch.Stop();
+            string test103 = stopwatch.Elapsed.ToString(); stopwatch.Reset();
+            stopwatch.Start(); quick_sort(ref pesim_50, 0, 49); stopwatch.Stop();
+            string test104 = stopwatch.Elapsed.ToString(); stopwatch.Reset();
+            stopwatch.Start(); quick_sort(ref pesim_75, 0, 74); stopwatch.Stop();
+            string test105 = stopwatch.Elapsed.ToString(); stopwatch.Reset();
+            stopwatch.Start(); quick_sort(ref pesim_100, 0, 99); stopwatch.Stop();
+            string test106 = stopwatch.Elapsed.ToString(); stopwatch.Reset();
+            stopwatch.Start(); quick_sort(ref pesim_200, 0, 199); stopwatch.Stop();
+            string test107 = stopwatch.Elapsed.ToString(); stopwatch.Reset();
+            stopwatch.Start(); quick_sort(ref pesim_300, 0, 299); stopwatch.Stop();
+            string test108 = stopwatch.Elapsed.ToString(); stopwatch.Reset();
+            stopwatch.Start(); quick_sort(ref pesim_400, 0, 399); stopwatch.Stop();
+            string test109 = stopwatch.Elapsed.ToString(); stopwatch.Reset();
+            stopwatch.Start(); quick_sort(ref pesim_500, 0, 499); stopwatch.Stop();
+            string test110 = stopwatch.Elapsed.ToString(); stopwatch.Reset();
+
+            stopwatch.Start(); quick_sort(ref optim_10, 0, 9); stopwatch.Stop();
+            string test111 = stopwatch.Elapsed.ToString(); stopwatch.Reset();
+            stopwatch.Start(); quick_sort(ref optim_20, 0, 19); stopwatch.Stop();
+            string test112 = stopwatch.Elapsed.ToString(); stopwatch.Reset();
+            stopwatch.Start(); quick_sort(ref optim_30, 0, 29); stopwatch.Stop();
+            string test113 = stopwatch.Elapsed.ToString(); stopwatch.Reset();
+            stopwatch.Start(); quick_sort(ref optim_50, 0, 49); stopwatch.Stop();
+            string test114 = stopwatch.Elapsed.ToString(); stopwatch.Reset();
+            stopwatch.Start(); quick_sort(ref optim_75, 0, 74); stopwatch.Stop();
+            string test115 = stopwatch.Elapsed.ToString(); stopwatch.Reset();
+            stopwatch.Start(); quick_sort(ref optim_100, 0, 99); stopwatch.Stop();
+            string test116 = stopwatch.Elapsed.ToString(); stopwatch.Reset();
+            stopwatch.Start(); quick_sort(ref optim_200, 0, 199); stopwatch.Stop();
+            string test117 = stopwatch.Elapsed.ToString(); stopwatch.Reset();
+            stopwatch.Start(); quick_sort(ref optim_300, 0, 299); stopwatch.Stop();
+            string test118 = stopwatch.Elapsed.ToString(); stopwatch.Reset();
+            stopwatch.Start(); quick_sort(ref optim_400, 0, 399); stopwatch.Stop();
+            string test119 = stopwatch.Elapsed.ToString(); stopwatch.Reset();
+            stopwatch.Start(); quick_sort(ref optim_500, 0, 499); stopwatch.Stop();
+            string test120 = stopwatch.Elapsed.ToString(); stopwatch.Reset();
 
 
             using (System.IO.StreamWriter file =
@@ -301,6 +362,18 @@ namespace Algo
                 file.WriteLine(test51 + '\n' + test52 + '\n' + test53 + '\n' + test54 + '\n' + test55 + '\n' + test56 + '\n' + test57 + '\n' + test58 + '\n' + test59 + '\n' + test60);
                 file.WriteLine("\n\nselection:\n\n");
                 file.WriteLine(test81 + '\n' + test82 + '\n' + test83 + '\n' + test84 + '\n' + test85 + '\n' + test86 + '\n' + test87 + '\n' + test88 + '\n' + test89 + '\n' + test90);
+                file.WriteLine("\n===================================================\n");
+            }
+
+            using (System.IO.StreamWriter file =
+            new System.IO.StreamWriter(@"C:\Users\Filip\Desktop\CAT\programming\C#\Algo\Algo\times_all_quick.txt", true))
+            {
+                file.WriteLine("bubble:\n\n");
+                file.WriteLine(test91 + '\n' + test92 + '\n' + test93 + '\n' + test94 + '\n' + test95 + '\n' + test96 + '\n' + test97 + '\n' + test98 + '\n' + test99 + '\n' + test100);
+                file.WriteLine("\n\ninsertion:\n\n");
+                file.WriteLine(test101 + '\n' + test102 + '\n' + test103 + '\n' + test104 + '\n' + test105 + '\n' + test106 + '\n' + test107 + '\n' + test108 + '\n' + test109 + '\n' + test110);
+                file.WriteLine("\n\nselection:\n\n");
+                file.WriteLine(test111 + '\n' + test112 + '\n' + test113 + '\n' + test114 + '\n' + test115 + '\n' + test116 + '\n' + test117 + '\n' + test118 + '\n' + test119 + '\n' + test120);
                 file.WriteLine("\n===================================================\n");
             }
         }
@@ -376,6 +449,26 @@ namespace Algo
                 t[ch] = tmp;
                 counting++;
             }
+        }
+
+        public static void quick_sort(ref int[] t, int left, int right)
+        {
+            var i = left;
+            var j = right;
+            var pivot = t[(left + right) / 2];
+            while (i < j)
+            {
+                while (t[i] < pivot) i++;
+                while (t[j] > pivot) j--;
+                if (i <= j)
+                {
+                    var tmp = t[i];
+                    t[i++] = t[j];
+                    t[j--] = tmp;
+                }
+            }
+            if (left < j) quick_sort(ref t, left, j);
+            if (i < right) quick_sort(ref t, i, right);
         }
     }
 }
