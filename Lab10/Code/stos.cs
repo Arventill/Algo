@@ -1,6 +1,3 @@
-//UWAGA - KOD NIE DZIAŁA DLA LICZB WIĘKSZYCH OD 9 [nie zaimplementowałem
-//          zamiany dwóch występujących po sobie cyfr na jedną liczbę]
-
 using ConsoleApp1.Resources;
 using System;
 using System.Collections.Generic;
